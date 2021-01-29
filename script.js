@@ -192,12 +192,13 @@ function allowDrop(e) {
 function drop(e) {
   e.preventDefault();
   const parent = listColumns[currentColumn];
+  
   // Remove Background Color/Padding
   listColumns.forEach((column) => {
     column.classList.remove("over");
   });
   // Add item to Column
-  const parent = listColumns[currentColumn];
+  const parent2 = listColumns[currentColumn];
   parent.appendChild(draggedItem);
   // Dragging complete
   dragging = false;
