@@ -198,7 +198,6 @@ function drop(e) {
     column.classList.remove("over");
   });
   // Add item to Column
-  const parent2 = listColumns[currentColumn];
   parent.appendChild(draggedItem);
   // Dragging complete
   dragging = false;
