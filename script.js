@@ -192,7 +192,7 @@ function allowDrop(e) {
 function drop(e) {
   e.preventDefault();
   const parent = listColumns[currentColumn];
-  
+
   // Remove Background Color/Padding
   listColumns.forEach((column) => {
     column.classList.remove("over");
